@@ -1,0 +1,614 @@
+[
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "algo.1_array",
+        "description": "algo.1_array",
+        "peekOfCode": "n = int(input())\nprint(\"enter the nums\")\narr = []\nfor i in range(n):\n    element = input()\n    arr.append(element)\nprint(arr)    \n# basic operation#\n#deletion\n'''d = input(\"enter the value u want to delete : \")",
+        "detail": "algo.1_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "algo.1_array",
+        "description": "algo.1_array",
+        "peekOfCode": "arr = []\nfor i in range(n):\n    element = input()\n    arr.append(element)\nprint(arr)    \n# basic operation#\n#deletion\n'''d = input(\"enter the value u want to delete : \")\nif d in arr:\n    arr.remove(d)",
+        "detail": "algo.1_array",
+        "documentation": {}
+    },
+    {
+        "label": "'''d",
+        "kind": 5,
+        "importPath": "algo.1_array",
+        "description": "algo.1_array",
+        "peekOfCode": "'''d = input(\"enter the value u want to delete : \")\nif d in arr:\n    arr.remove(d)\n    print(\"the new array is :\")\n    print(arr)\nelse:\n    print(\"no value is in array\")\n'''",
+        "detail": "algo.1_array",
+        "documentation": {}
+    },
+    {
+        "label": "d_mat",
+        "kind": 5,
+        "importPath": "algo.2_array",
+        "description": "algo.2_array",
+        "peekOfCode": "d_mat = [[input() for i in range(c)]for j in range(r)]\nprint(d_mat)",
+        "detail": "algo.2_array",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "class Node: \n    def __init__(self,data):\n        self.data = data\n        self.prev = None\n        self.next = None\nclass Dll:\n    def __init__(self):\n        self.head = None\n    def forward_traversal(self):\n        if self.head is None:",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "Dll",
+        "kind": 6,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "class Dll:\n    def __init__(self):\n        self.head = None\n    def forward_traversal(self):\n        if self.head is None:\n            print(\"empty linked list\")\n        else:\n            a = self.head\n            while a is not None:\n                print(a.data,end=\" \")",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n1 = Node(5)\ndll =Dll()\ndll.head = n1\nn2 = Node(10)\nn1.next = n2\nn2.prev = n1\nn3 = Node(15)\nn2.next = n3\nn3.prev = n2\nn4 = Node(20)",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "dll.head",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "dll.head = n1\nn2 = Node(10)\nn1.next = n2\nn2.prev = n1\nn3 = Node(15)\nn2.next = n3\nn3.prev = n2\nn4 = Node(20)\nn3.next = n4\nn4.prev = n3",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n2 = Node(10)\nn1.next = n2\nn2.prev = n1\nn3 = Node(15)\nn2.next = n3\nn3.prev = n2\nn4 = Node(20)\nn3.next = n4\nn4.prev = n3\n#insertion opertion",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n1.next",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n1.next = n2\nn2.prev = n1\nn3 = Node(15)\nn2.next = n3\nn3.prev = n2\nn4 = Node(20)\nn3.next = n4\nn4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n2.prev",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n2.prev = n1\nn3 = Node(15)\nn2.next = n3\nn3.prev = n2\nn4 = Node(20)\nn3.next = n4\nn4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)\n#dll.insertion_at_end(25)",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n3",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n3 = Node(15)\nn2.next = n3\nn3.prev = n2\nn4 = Node(20)\nn3.next = n4\nn4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)\n#dll.insertion_at_end(25)\n#dll.insertion_at_specific(12,4)",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n2.next",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n2.next = n3\nn3.prev = n2\nn4 = Node(20)\nn3.next = n4\nn4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)\n#dll.insertion_at_end(25)\n#dll.insertion_at_specific(12,4)\n#deletion operation",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n3.prev",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n3.prev = n2\nn4 = Node(20)\nn3.next = n4\nn4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)\n#dll.insertion_at_end(25)\n#dll.insertion_at_specific(12,4)\n#deletion operation\n#dll.deletion_at_begining()",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n4",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n4 = Node(20)\nn3.next = n4\nn4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)\n#dll.insertion_at_end(25)\n#dll.insertion_at_specific(12,4)\n#deletion operation\n#dll.deletion_at_begining()\n#dll.deletion_at_end()",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n3.next",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n3.next = n4\nn4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)\n#dll.insertion_at_end(25)\n#dll.insertion_at_specific(12,4)\n#deletion operation\n#dll.deletion_at_begining()\n#dll.deletion_at_end()\n#dll.deletion_at_specific(3)",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n4.prev",
+        "kind": 5,
+        "importPath": "algo.double_linked_list",
+        "description": "algo.double_linked_list",
+        "peekOfCode": "n4.prev = n3\n#insertion opertion\n#dll.insertion_at_begining(2)\n#dll.insertion_at_end(25)\n#dll.insertion_at_specific(12,4)\n#deletion operation\n#dll.deletion_at_begining()\n#dll.deletion_at_end()\n#dll.deletion_at_specific(3)\ndll.forward_traversal()",
+        "detail": "algo.double_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "fib",
+        "kind": 2,
+        "importPath": "algo.fibbonacci",
+        "description": "algo.fibbonacci",
+        "peekOfCode": "def fib(n):\n    if n<=1:\n        return n \n    else:\n        return fib(n-1)+fib(n-2)\nn = int(input())\nans=fib(n)\nprint(ans)\n\"\"\"\ndef fib(n):",
+        "detail": "algo.fibbonacci",
+        "documentation": {}
+    },
+    {
+        "label": "fib",
+        "kind": 2,
+        "importPath": "algo.fibbonacci",
+        "description": "algo.fibbonacci",
+        "peekOfCode": "def fib(n):\n    f = [0, 1]\n    for i in range(2, n+1):\n        f.append(f[i - 1] + f[i - 2])\n    return f[n]\nn = int(input())\nans = fib(n)\nprint(ans)",
+        "detail": "algo.fibbonacci",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "algo.fibbonacci",
+        "description": "algo.fibbonacci",
+        "peekOfCode": "n = int(input())\nans=fib(n)\nprint(ans)\n\"\"\"\ndef fib(n):\n    f = [0, 1]\n    for i in range(2, n+1):\n        f.append(f[i - 1] + f[i - 2])\n    return f[n]\nn = int(input())",
+        "detail": "algo.fibbonacci",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "algo.fibbonacci",
+        "description": "algo.fibbonacci",
+        "peekOfCode": "n = int(input())\nans = fib(n)\nprint(ans)",
+        "detail": "algo.fibbonacci",
+        "documentation": {}
+    },
+    {
+        "label": "ans",
+        "kind": 5,
+        "importPath": "algo.fibbonacci",
+        "description": "algo.fibbonacci",
+        "peekOfCode": "ans = fib(n)\nprint(ans)",
+        "detail": "algo.fibbonacci",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "algo.max_pair_product",
+        "description": "algo.max_pair_product",
+        "peekOfCode": "n = int(input())\nnum = [ int(i) for i in input().split()]\nnum = [int(x) for x in num]\nnum.sort(reverse = True)\na = num[0]\nb = num[1]\nproduct = a*b\nprint(product)",
+        "detail": "algo.max_pair_product",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "algo.max_pair_product",
+        "description": "algo.max_pair_product",
+        "peekOfCode": "num = [ int(i) for i in input().split()]\nnum = [int(x) for x in num]\nnum.sort(reverse = True)\na = num[0]\nb = num[1]\nproduct = a*b\nprint(product)",
+        "detail": "algo.max_pair_product",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "algo.max_pair_product",
+        "description": "algo.max_pair_product",
+        "peekOfCode": "num = [int(x) for x in num]\nnum.sort(reverse = True)\na = num[0]\nb = num[1]\nproduct = a*b\nprint(product)",
+        "detail": "algo.max_pair_product",
+        "documentation": {}
+    },
+    {
+        "label": "num.sort(reverse",
+        "kind": 5,
+        "importPath": "algo.max_pair_product",
+        "description": "algo.max_pair_product",
+        "peekOfCode": "num.sort(reverse = True)\na = num[0]\nb = num[1]\nproduct = a*b\nprint(product)",
+        "detail": "algo.max_pair_product",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "algo.max_pair_product",
+        "description": "algo.max_pair_product",
+        "peekOfCode": "a = num[0]\nb = num[1]\nproduct = a*b\nprint(product)",
+        "detail": "algo.max_pair_product",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "algo.max_pair_product",
+        "description": "algo.max_pair_product",
+        "peekOfCode": "b = num[1]\nproduct = a*b\nprint(product)",
+        "detail": "algo.max_pair_product",
+        "documentation": {}
+    },
+    {
+        "label": "product",
+        "kind": 5,
+        "importPath": "algo.max_pair_product",
+        "description": "algo.max_pair_product",
+        "peekOfCode": "product = a*b\nprint(product)",
+        "detail": "algo.max_pair_product",
+        "documentation": {}
+    },
+    {
+        "label": "insert",
+        "kind": 2,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "def insert(key,value):\n    hash_table[key] = value\nprint(\"key and value :\")\nfor i in range(n):\n    key,value = input().split(\" \")\n    insert(key,value)\nprint(hash_table)\ntarget = input(\"enter the value u want to find : \")\n'''\ntarget = int(input(\"enter the value u want to find : \"))",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "linear",
+        "kind": 2,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "def linear(arr,target):\n    for i, element in enumerate(arr):\n        if element == target:\n            return i\n    return -1    \ns  = linear(arr,target)\n'''\n#binary search\n'''\ndef binary(arr,target):",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "binary",
+        "kind": 2,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "def binary(arr,target):\n    low,high  = 0, len(arr)-1\n    while low <= high:\n        mid  = low + (high - low)//2 \n        if arr[mid] == target:\n            return mid\n        elif mid < target:\n            low  = mid + 1\n        else:\n            high  = mid - 1",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "def search(target):\n    if target in hash_table:\n        return hash_table[target]\n    else: \n        return -1\ns = search(target)\n'''\nprint(\"the index no. is \",s)",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "n = int(input(\"enter no of element : \"))\nprint(\"enter the element : \")\n#for linear and binary seraching array \n'''\narr = []\nfor i in range(n):\n    element = int(input())\n    arr.append(element)\nprint(arr)\n'''",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "arr = []\nfor i in range(n):\n    element = int(input())\n    arr.append(element)\nprint(arr)\n'''\n#for hashing table formation\n'''\nhash_table ={}\ndef insert(key,value):",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "target",
+        "kind": 5,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "target = input(\"enter the value u want to find : \")\n'''\ntarget = int(input(\"enter the value u want to find : \"))\n#linear search\n'''\ndef linear(arr,target):\n    for i, element in enumerate(arr):\n        if element == target:\n            return i\n    return -1    ",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "target",
+        "kind": 5,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "target = int(input(\"enter the value u want to find : \"))\n#linear search\n'''\ndef linear(arr,target):\n    for i, element in enumerate(arr):\n        if element == target:\n            return i\n    return -1    \ns  = linear(arr,target)\n'''",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "s = binary(arr,target)\n'''\n#hashing search\n'''\ndef search(target):\n    if target in hash_table:\n        return hash_table[target]\n    else: \n        return -1\ns = search(target)",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "algo.searching",
+        "description": "algo.searching",
+        "peekOfCode": "s = search(target)\n'''\nprint(\"the index no. is \",s)",
+        "detail": "algo.searching",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "class Node: \n    def __init__(self,data):\n        self.data = data\n        self.next = None\nclass Sll:\n    def __init__(self):\n        self.head = None\n    def traversal(self):\n        if self.head is None:\n            print(\"empty linked list\")",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "Sll",
+        "kind": 6,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "class Sll:\n    def __init__(self):\n        self.head = None\n    def traversal(self):\n        if self.head is None:\n            print(\"empty linked list\")\n        else :\n            a = self.head\n            while a is not None:\n                print(a.data,end =\" \")",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "n1 = Node(5)#node creation\nsll = Sll()# calling single linked list function\nsll.head = n1# setting head at node 1\nn2 = Node(10)#creating other nodes\nn1.next = n2#linking node1 to node 2\nn3 = Node(15)\nn2.next = n3\nn4 = Node(20)\nn3.next = n4\n#insertion opertion",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "sll",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "sll = Sll()# calling single linked list function\nsll.head = n1# setting head at node 1\nn2 = Node(10)#creating other nodes\nn1.next = n2#linking node1 to node 2\nn3 = Node(15)\nn2.next = n3\nn4 = Node(20)\nn3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "sll.head",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "sll.head = n1# setting head at node 1\nn2 = Node(10)#creating other nodes\nn1.next = n2#linking node1 to node 2\nn3 = Node(15)\nn2.next = n3\nn4 = Node(20)\nn3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)\n#sll.insertion_at_end(25)",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "n2 = Node(10)#creating other nodes\nn1.next = n2#linking node1 to node 2\nn3 = Node(15)\nn2.next = n3\nn4 = Node(20)\nn3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)\n#sll.insertion_at_end(25)\n#sll.insertion_at_specific(12,4)",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n1.next",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "n1.next = n2#linking node1 to node 2\nn3 = Node(15)\nn2.next = n3\nn4 = Node(20)\nn3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)\n#sll.insertion_at_end(25)\n#sll.insertion_at_specific(12,4)\n#deletion opertion",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n3",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "n3 = Node(15)\nn2.next = n3\nn4 = Node(20)\nn3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)\n#sll.insertion_at_end(25)\n#sll.insertion_at_specific(12,4)\n#deletion opertion\n#sll.deletion_at_begining()",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n2.next",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "n2.next = n3\nn4 = Node(20)\nn3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)\n#sll.insertion_at_end(25)\n#sll.insertion_at_specific(12,4)\n#deletion opertion\n#sll.deletion_at_begining()\n#sll.deletion_at_end()",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n4",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "n4 = Node(20)\nn3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)\n#sll.insertion_at_end(25)\n#sll.insertion_at_specific(12,4)\n#deletion opertion\n#sll.deletion_at_begining()\n#sll.deletion_at_end()\n#sll.deletion_at_specific(2)",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "n3.next",
+        "kind": 5,
+        "importPath": "algo.single_linked_list",
+        "description": "algo.single_linked_list",
+        "peekOfCode": "n3.next = n4\n#insertion opertion\n#sll.insertion_at_begining(2)\n#sll.insertion_at_end(25)\n#sll.insertion_at_specific(12,4)\n#deletion opertion\n#sll.deletion_at_begining()\n#sll.deletion_at_end()\n#sll.deletion_at_specific(2)\nsll.traversal()",
+        "detail": "algo.single_linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "merge",
+        "kind": 2,
+        "importPath": "algo.sorting",
+        "description": "algo.sorting",
+        "peekOfCode": "def merge(arr):\n    if len(arr) > 1:\n        mid = len(arr)//2\n        left = arr[:mid]\n        right = arr[mid:]\n        merge(left)\n        merge(right)\n        i=j=k=0\n        while i < len( left ) and j < len( right ):\n            if left[i] < right[j]:",
+        "detail": "algo.sorting",
+        "documentation": {}
+    },
+    {
+        "label": "quick",
+        "kind": 2,
+        "importPath": "algo.sorting",
+        "description": "algo.sorting",
+        "peekOfCode": "def quick(arr,low,high):\n    if low < high:\n        pivot_part = partition(arr,low,high)\n        quick(arr,low,pivot_part-1)\n        quick(arr,pivot_part+1,high)\ndef partition(arr,low,high):\n    i=low\n    j=high-1\n    pivot = arr[high]\n    while i < j:",
+        "detail": "algo.sorting",
+        "documentation": {}
+    },
+    {
+        "label": "partition",
+        "kind": 2,
+        "importPath": "algo.sorting",
+        "description": "algo.sorting",
+        "peekOfCode": "def partition(arr,low,high):\n    i=low\n    j=high-1\n    pivot = arr[high]\n    while i < j:\n        while i < high and arr[i] < pivot:\n            i+=1 \n        while j > low and arr[j] >= pivot:\n            j-=1 \n        if i < j:",
+        "detail": "algo.sorting",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "algo.sorting",
+        "description": "algo.sorting",
+        "peekOfCode": "n = int(input(\"enter the no. of element : \"))\narr =[]\nprint(\"enter the numbers : \")\nfor i in range(n):\n    element = input()\n    arr.append(element)\nprint(arr)\n#bubble sorting \n'''for i in range(n):\n    for j in range(0,n-i-1):",
+        "detail": "algo.sorting",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "algo.sum_of_two_digit",
+        "description": "algo.sum_of_two_digit",
+        "peekOfCode": "num = input().split()\na = int(num[0])\nb = int(num[1])\nprint(a+b)",
+        "detail": "algo.sum_of_two_digit",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "algo.sum_of_two_digit",
+        "description": "algo.sum_of_two_digit",
+        "peekOfCode": "a = int(num[0])\nb = int(num[1])\nprint(a+b)",
+        "detail": "algo.sum_of_two_digit",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "algo.sum_of_two_digit",
+        "description": "algo.sum_of_two_digit",
+        "peekOfCode": "b = int(num[1])\nprint(a+b)",
+        "detail": "algo.sum_of_two_digit",
+        "documentation": {}
+    },
+    {
+        "label": "fibb",
+        "kind": 2,
+        "importPath": "basics.fibbonacci",
+        "description": "basics.fibbonacci",
+        "peekOfCode": "def fibb(n):\n    if n<=1:\n        return n \n    dp=[0]*(n+1)\n    dp[1]=1\n    for i in  range(2,n+1):\n        dp[i]= dp[i-1]+dp[i-2];\n    return dp[n]    \nn = int(input(\"enter the no. : \"))\nprint(n)",
+        "detail": "basics.fibbonacci",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "basics.fibbonacci",
+        "description": "basics.fibbonacci",
+        "peekOfCode": "n = int(input(\"enter the no. : \"))\nprint(n)\nprint(fibb(n))",
+        "detail": "basics.fibbonacci",
+        "documentation": {}
+    },
+    {
+        "label": "frogjump",
+        "kind": 2,
+        "importPath": "basics.frogjump",
+        "description": "basics.frogjump",
+        "peekOfCode": "def frogjump(n):\n    if n<=2:\n        return n \n    dp =[0]*(n+1)\n    dp[1]=1\n    dp[2]=2\n    for i in range(3,n+1):\n        dp[i]=dp[i-1]+dp[i-2]\n    return dp[n]\nn = int(input(\"enter the number : \"))",
+        "detail": "basics.frogjump",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "basics.frogjump",
+        "description": "basics.frogjump",
+        "peekOfCode": "n = int(input(\"enter the number : \"))\nprint(frogjump(n))",
+        "detail": "basics.frogjump",
+        "documentation": {}
+    },
+    {
+        "label": "countDigit",
+        "kind": 2,
+        "importPath": "basics.number_of_digit_in_number",
+        "description": "basics.number_of_digit_in_number",
+        "peekOfCode": "def countDigit(n):\n    if n==0:\n        return 0\n    return 1 + countDigit(n/10)\nn = int(input(\"Number: \\n\"))\nprint(countDigit(n))\n#iterative solution#\n''' \ncount = 0\nwhile n != 0:",
+        "detail": "basics.number_of_digit_in_number",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "basics.number_of_digit_in_number",
+        "description": "basics.number_of_digit_in_number",
+        "peekOfCode": "n = int(input(\"Number: \\n\"))\nprint(countDigit(n))\n#iterative solution#\n''' \ncount = 0\nwhile n != 0:\n    n=n//10\n    count += 1\nprint(\"number of digits are \",count)  \n'''",
+        "detail": "basics.number_of_digit_in_number",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "basics.number_of_digit_in_number",
+        "description": "basics.number_of_digit_in_number",
+        "peekOfCode": "count = 0\nwhile n != 0:\n    n=n//10\n    count += 1\nprint(\"number of digits are \",count)  \n'''",
+        "detail": "basics.number_of_digit_in_number",
+        "documentation": {}
+    },
+    {
+        "label": "Complixity_contrant",
+        "kind": 2,
+        "importPath": "basics.sum_of_n_natural_number",
+        "description": "basics.sum_of_n_natural_number",
+        "peekOfCode": "def Complixity_contrant(n):\n    return (n*(n+1)/2)\ndef Complixity_linear(n):\n    sum =0\n    for i in range(1,n+1):\n        sum += i\n    return sum\nn = int(input(\"enter the nth number\\n\"))\nclick = input(\"Enter L for Liner & C for Const\\n\")\nif click=='L':",
+        "detail": "basics.sum_of_n_natural_number",
+        "documentation": {}
+    },
+    {
+        "label": "Complixity_linear",
+        "kind": 2,
+        "importPath": "basics.sum_of_n_natural_number",
+        "description": "basics.sum_of_n_natural_number",
+        "peekOfCode": "def Complixity_linear(n):\n    sum =0\n    for i in range(1,n+1):\n        sum += i\n    return sum\nn = int(input(\"enter the nth number\\n\"))\nclick = input(\"Enter L for Liner & C for Const\\n\")\nif click=='L':\n    print(Complixity_contrant(n))\nif click=='O':",
+        "detail": "basics.sum_of_n_natural_number",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "basics.sum_of_n_natural_number",
+        "description": "basics.sum_of_n_natural_number",
+        "peekOfCode": "n = int(input(\"enter the nth number\\n\"))\nclick = input(\"Enter L for Liner & C for Const\\n\")\nif click=='L':\n    print(Complixity_contrant(n))\nif click=='O':\n    print(Complixity_linear(n))",
+        "detail": "basics.sum_of_n_natural_number",
+        "documentation": {}
+    },
+    {
+        "label": "click",
+        "kind": 5,
+        "importPath": "basics.sum_of_n_natural_number",
+        "description": "basics.sum_of_n_natural_number",
+        "peekOfCode": "click = input(\"Enter L for Liner & C for Const\\n\")\nif click=='L':\n    print(Complixity_contrant(n))\nif click=='O':\n    print(Complixity_linear(n))",
+        "detail": "basics.sum_of_n_natural_number",
+        "documentation": {}
+    }
+]
