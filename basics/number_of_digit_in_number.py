@@ -1,20 +1,17 @@
+import math
 
 #Recursive solution
 def countDigit(n):
     if n==0:
         return 0
-    return 1 + countDigit(n/10)
+    return 1 + countDigit(n//10)
 
-
-
-
-
-
-
-
+# using log
+def countDigit1(n):
+    return math.floor(math.log10(n)+1)
 
 n = int(input("Number: \n"))
-print(countDigit(n))
+print(countDigit1(n))
 #iterative solution#
 ''' 
 count = 0
