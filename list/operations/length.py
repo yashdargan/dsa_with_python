@@ -43,6 +43,16 @@ class LinkList:
             current = current.next
             length += 1
         print(middle.value)
+    # same like above but not checking length, just moving twicer then other
+    # Floyd’s Cycle Finding Algorithm:
+
+    def findMiddle(self):
+        middle = self.head
+        current = self.head
+        while current is not None and current.next is not None:
+            current = current.next.next
+            middle = middle.next
+        print(middle.value)
 
 
 if __name__ == "__main__":
@@ -54,3 +64,4 @@ if __name__ == "__main__":
     ll.append("ree")
     ll.printing()
     ll.findingMiddle()
+    ll.findMiddle()
