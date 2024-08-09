@@ -1,13 +1,16 @@
+# initalization of Node Class
 class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
 
+# initailization of LinkList class
+
 
 class Linklist:
     def __init__(self, head=None):
         self.head = head
-        # simple insertion of Linklist
+    # creation and inseration at end of LinkList
 
     def append(self, new_value):
         new_node = Node(new_value)
@@ -18,6 +21,7 @@ class Linklist:
             current.next = new_node
         else:
             self.head = new_node
+    # inseration at Beginging
 
     def inserationAtStart(self, new_value):
         new_node = Node(new_value)
@@ -40,4 +44,6 @@ if __name__ == "__main__":
     ll.append(6)
     ll.append(2)
     ll.append("dog")
+    ll.Printing()
+    ll.inserationAtStart("cat")
     ll.Printing()
